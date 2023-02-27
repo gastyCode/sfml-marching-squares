@@ -7,15 +7,7 @@ Game::Game(sf::Vector2<int> size, std::string title)
 
 	this->changeFPS(60);
 
-	this->circle = new Circle*[10];
-	for (int i = 0; i < 10; i++)
-	{
-		this->circle[i] = new Circle[10];
-		for (int j = 0; j < 10; j++)
-		{
-			this->circle[i][j] = Circle(this->window, sf::Vector2f(i * 60, j * 60), 10);
-		}
-	}
+	this->grid = new Grid(this->window, sf::Vector2i(15, 11), 50, 7);
 }
 
 void Game::changeFPS(int value)
@@ -53,18 +45,13 @@ void Game::update()
 
 void Game::render()
 {
-	(*this->window).clear(sf::Color::Black);
-	for (int i = 0; i < 10; i++)
-	{
-		for (int j = 0; j < 10; j++)
-		{
-			this->circle[i][j].draw();
-		}
-	}
+	(*this->window).clear(sf::Color(128, 128, 128));
+	(*this->grid).draw();
 	(*this->window).display();
 }
 
 Game::~Game()
 {
-	delete[] window;
+	delete[] this->window;
+	delete[] this->grid;
 }

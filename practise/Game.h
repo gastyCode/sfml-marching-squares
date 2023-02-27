@@ -3,17 +3,19 @@
 #include <SFML/Window.hpp>
 #include <SFML/Graphics.hpp>
 #include <SFML/System.hpp>
-#include "Circle.h"
 
-class Circle;
+#include "Grid.h"
+
+class Grid;
 
 class Game
 {
 private:
-	sf::Vector2<int> size;
 	sf::RenderWindow* window;
+	sf::Vector2<int> size;
 	int fps;
-	Circle** circle;
+
+	Grid* grid;
 
 	void events();
 

@@ -130,15 +130,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
+    <ClCompile Include="Grid.cpp" />
     <ClCompile Include="practise.cpp" />
     <ClCompile Include="Circle.cpp" />
-    <ClCompile Include="Square.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
+    <ClInclude Include="Grid.h" />
     <ClInclude Include="practise.h" />
     <ClInclude Include="Circle.h" />
-    <ClInclude Include="Square.h" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
