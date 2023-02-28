@@ -3,7 +3,8 @@
 
 int main()
 {
-    Game game(sf::Vector2<int>(800, 600), "Marching Squares");
+    srand(time(NULL));
+    Game game(sf::Vector2<int>(1600, 900), "Marching Squares");
 
     while (game.running())
     {

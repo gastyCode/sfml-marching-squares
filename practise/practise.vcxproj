@@ -131,12 +131,14 @@
   <ItemGroup>
     <ClCompile Include="Game.cpp" />
     <ClCompile Include="Grid.cpp" />
+    <ClCompile Include="Line.cpp" />
     <ClCompile Include="practise.cpp" />
     <ClCompile Include="Circle.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Game.h" />
     <ClInclude Include="Grid.h" />
+    <ClInclude Include="Line.h" />
     <ClInclude Include="practise.h" />
     <ClInclude Include="Circle.h" />
   </ItemGroup>

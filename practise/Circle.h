@@ -17,6 +17,7 @@ private:
 public:
 	Circle();
 	Circle(sf::RenderWindow* window, sf::Vector2f position, float radius, bool isFilled);
+	bool getFilled();
 	void draw();
 	~Circle();
 };

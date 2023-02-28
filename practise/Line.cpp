@@ -17,5 +17,3 @@ void Line::draw()
 {
 	this->window->draw(this->line, 2, sf::Lines);
 }
-
-

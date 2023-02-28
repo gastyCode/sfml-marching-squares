@@ -16,13 +16,18 @@ Circle::Circle(sf::RenderWindow* window, sf::Vector2f position, float radius, bo
 	this->isFilled = isFilled;
 
 	this->shape.setRadius(this->radius);
-	this->shape.setPosition(this->position);
-	this->shape.setFillColor(sf::Color::White);
+	this->shape.setPosition(this->position - sf::Vector2f(this->radius, this->radius));
+	this->shape.setFillColor(sf::Color::Red);
 
 	if (isFilled)
 	{
-		this->shape.setFillColor(sf::Color::Black);
+		this->shape.setFillColor(sf::Color::Green);
 	}
+}
+
+bool Circle::getFilled()
+{
+	return this->isFilled;
 }
 
 void Circle::draw()

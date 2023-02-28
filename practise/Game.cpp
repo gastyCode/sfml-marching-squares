@@ -7,7 +7,7 @@ Game::Game(sf::Vector2<int> size, std::string title)
 
 	this->changeFPS(60);
 
-	this->grid = new Grid(this->window, sf::Vector2i(15, 11), 50, 7);
+	this->grid = new Grid(this->window, 50, 7);
 }
 
 void Game::changeFPS(int value)
@@ -45,7 +45,7 @@ void Game::update()
 
 void Game::render()
 {
-	(*this->window).clear(sf::Color(128, 128, 128));
+	(*this->window).clear(sf::Color::Black);
 	(*this->grid).draw();
 	(*this->window).display();
 }
