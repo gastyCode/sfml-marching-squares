@@ -1,6 +1,6 @@
 #include "Game.h"
 
-Game::Game(sf::Vector2<int> size, std::string title)
+Game::Game(sf::Vector2<int> size, const std::string& title)
 {
 	this->size = size;
 	this->window = new sf::RenderWindow(sf::VideoMode(this->size.x, this->size.y), title);
@@ -16,14 +16,14 @@ void Game::changeFPS(int value)
 	(*this->window).setFramerateLimit(this->fps);
 }
 
-bool Game::running()
+bool Game::running() const
 {
 	return (*this->window).isOpen();
 }
 
-void Game::events()
+void Game::events() const
 {
-	sf::Event event;
+	sf::Event event{};
 	while ((*this->window).pollEvent(event))
 	{
 		switch (event.type)
@@ -38,12 +38,12 @@ void Game::events()
 	}
 }
 
-void Game::update()
+void Game::update() const
 {
 	this->events();
 }
 
-void Game::render()
+void Game::render() const
 {
 	(*this->window).clear(sf::Color::Black);
 	(*this->grid).draw();

@@ -129,21 +129,20 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="Game.cpp" />
-    <ClCompile Include="Grid.cpp" />
-    <ClCompile Include="Line.cpp" />
-    <ClCompile Include="practise.cpp" />
-    <ClCompile Include="Circle.cpp" />
+    <ClCompile Include="src\Game.cpp" />
+    <ClCompile Include="src\Grid.cpp" />
+    <ClCompile Include="src\Line.cpp" />
+    <ClCompile Include="src\practise.cpp" />
+    <ClCompile Include="src\Circle.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="Game.h" />
-    <ClInclude Include="Grid.h" />
-    <ClInclude Include="Line.h" />
-    <ClInclude Include="practise.h" />
-    <ClInclude Include="Circle.h" />
+    <ClInclude Include="src\Game.h" />
+    <ClInclude Include="src\Grid.h" />
+    <ClInclude Include="src\Line.h" />
+    <ClInclude Include="src\Circle.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="packages.config" />
+    <None Include="src\packages.config" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets" />

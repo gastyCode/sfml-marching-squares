@@ -2,7 +2,7 @@
 
 Circle::Circle()
 {
-	this->window = NULL;
+	this->window = nullptr;
 	this->position = sf::Vector2f();
 	this->radius = NULL;
 	this->isFilled = NULL;
@@ -25,16 +25,12 @@ Circle::Circle(sf::RenderWindow* window, sf::Vector2f position, float radius, bo
 	}
 }
 
-bool Circle::getFilled()
+bool Circle::getFilled() const
 {
 	return this->isFilled;
 }
 
-void Circle::draw()
+void Circle::draw() const
 {
 	this->window->draw(this->shape);
-}
-
-Circle::~Circle()
-{
 }

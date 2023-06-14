@@ -13,7 +13,7 @@ Line::Line(sf::RenderWindow* window, sf::Vector2f begin, sf::Vector2f end)
 	};
 }
 
-void Line::draw()
+void Line::draw() const
 {
 	this->window->draw(this->line, 2, sf::Lines);
 }
